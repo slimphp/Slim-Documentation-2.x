@@ -31,6 +31,7 @@ pages:
     - [request/paths.md, Request, Paths]
     - [request/xhr.md, Request, XHR]
     - [request/helpers.md, Request, Helpers]
+    - [request/content-types.md, Request, Content-Types]    
     - [response/overview.md, Response, Overview]
     - [response/status.md, Response, Status]
     - [response/headers.md, Response, Headers]
