@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>PATCH Routes - Slim Framework v2</title>
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+  <script src="../../js/theme.js"></script>
+
+  <style>
+    body {font-size: 90%;}
+    pre, code {font-size: 100%;}
+    h3, h4, h5, h6 {color: #2980b9; font-weight: 300}
+  </style> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Slim Framework v2</a>
+        
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+      <ul class="current">
+    
+        
+        <span>Get Started</span>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../start/get-started">Get started</a>
+                    
+                </li>
+            
+        
+
+    
+        
+        <span>Configuration</span>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../configuration/overview">Overview</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../configuration/settings">Settings</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../configuration/names-and-scopes">Names and Scopes</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../configuration/modes">Modes</a>
+                    
+                </li>
+            
+        
+
+    
+        
+        <span>Routing</span>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../overview">Overview</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../get">GET Routes</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../post">POST Routes</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../put">PUT Routes</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../delete">DELETE Routes</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../options">OPTIONS Routes</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 current">
+                    <a class="current" href=".">PATCH Routes</a>
+                    
+                        <ul>
+                        
+                        </ul>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../custom">Custom Routes</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../params">Parameters</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../names">Names</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../conditions">Conditions</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../middleware">Middleware</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../groups">Groups</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../helpers">Helpers</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../rewrite">URL Rewriting</a>
+                    
+                </li>
+            
+        
+
+    
+        
+        <span>Environment</span>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../environment/overview">Overview</a>
+                    
+                </li>
+            
+        
+
+    
+        
+        <span>Request</span>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../request/overview">Overview</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../request/method">Method</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../request/headers">Headers</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../request/body">Body</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../request/variables">Variables</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../request/cookies">Cookies</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../request/paths">Paths</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../request/xhr">XHR</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../request/helpers">Helpers</a>
+                    
+                </li>
+            
+        
+
+    
+        
+        <span>Response</span>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../response/overview">Overview</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../response/status">Status</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../response/headers">Headers</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../response/body">Body</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../response/cookies">Cookies</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../response/helpers">Helpers</a>
+                    
+                </li>
+            
+        
+
+    
+        
+        <span>View</span>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../view/overview">Overview</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../view/rendering">Rendering</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../view/custom">Custom</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../view/data">Data</a>
+                    
+                </li>
+            
+        
+
+    
+        
+        <span>HTTP Cache</span>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../cache/overview">Overview</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../cache/etag">ETag</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../cache/lastmodified">Last Modified</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../cache/expires">Expires</a>
+                    
+                </li>
+            
+        
+
+    
+        
+        <span>Middleware</span>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../middleware/overview">Overview</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../middleware/how-to-use">How to Use</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../middleware/how-to-write">How to Write</a>
+                    
+                </li>
+            
+        
+
+    
+        
+        <span>Hooks</span>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../hooks/overview">Overview</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../hooks/how-to-use">How to Use</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../hooks/defaults">Defaults</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../hooks/custom">Custom</a>
+                    
+                </li>
+            
+        
+
+    
+        
+        <span>Flash Messages</span>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../flash/overview">Overview</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../flash/next">Next</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../flash/now">Now</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../flash/keep">Keep</a>
+                    
+                </li>
+            
+        
+
+    
+        
+        <span>Sessions</span>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../sessions/native">Native</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../sessions/cookies">Cookies</a>
+                    
+                </li>
+            
+        
+
+    
+        
+        <span>Logging</span>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../logging/activate">Activate</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../logging/levels">Levels</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../logging/writers">Writers</a>
+                    
+                </li>
+            
+        
+
+    
+        
+        <span>Error Handling</span>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../errors/overview">Overview</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../errors/500">500 System Error</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../errors/404">404 Not Found</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../errors/debug">Debug Mode</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../errors/output">Output</a>
+                    
+                </li>
+            
+        
+
+    
+        
+        <span>Dependency Injection</span>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../di/overview">Overview</a>
+                    
+                </li>
+            
+        
+
+    
+</ul>
+
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="../.."></a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    <li>PATCH Routes</li>
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              <p>Use the Slim application's <code>patch()</code> method to map a callback function to a resource URI that is requested with
+the HTTP PATCH method.</p>
+<pre><code>&lt;?php
+$app = new \Slim\Slim();
+$app-&gt;patch('/books/:id', function ($id) {
+    // Patch book with given ID
+});
+</code></pre>
+<p>In this example, an HTTP PATCH request for “/books/1” will invoke the associated callback function, passing "1" as
+the callback function's argument.</p>
+<p>The first argument of the Slim application's <code>patch()</code> method is the resource URI. The last argument is anything that
+returns <code>true</code> for <code>is_callable()</code>. Typically, the last argument will be an [anonymous function][anon-func].</p>
+
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../custom" class="btn btn-neutral float-right" title="Custom Routes"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../options" class="btn btn-neutral" title="OPTIONS Routes"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+    <!-- Copyright etc -->
+    </p>
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+        
+      <span><a href="../options" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      <span style="margin-left: 15px"><a href="../custom" style="color: #fcfcfc">Next &raquo;</a></span>
+    </span>
+</div>
+</body>
+</html>
