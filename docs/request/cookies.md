@@ -18,6 +18,14 @@ directly from the \Slim\Http\Request object like this:
 This will return an instance of \Slim\Helper\Set so you can use its simple, standardized interface to inspect the
 request's cookies.
 
+### Set Cookies
+
+You can set cookie values with the Slim application’s `setCookie()` helper method like this:
+
+    <?php
+    $app = new \Slim\Slim();
+    $foo = $app->setCookie('value', 'key', '1 day', '/', 'example.com');
+
 ### Cookie Encryption
 
 You can optionally choose to encrypt all cookies stored on the HTTP client with the Slim app's `cookies.encrypt`
