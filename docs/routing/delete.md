@@ -28,4 +28,4 @@ If you are using [Backbone.js][backbone] or a command-line HTTP client, you may 
 using the **X-HTTP-Method-Override** header.
 
 [anon-func]: http://php.net/manual/en/functions.anonymous.php
-[backbone]: http://documentcloud.github.com/backbone/
+[backbone]: http://backbonejs.org
