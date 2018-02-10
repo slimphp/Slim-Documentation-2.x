@@ -54,6 +54,9 @@ This will override the existing `\Slim\Http\Response` object.
     //Or if you encounter a Balrog...
     $app->halt(403, 'You shall not pass!');
 
+    //Or if you'd like to have a tea but you have no teapot at hand (and you respect [RFC7168](https://tools.ietf.org/html/rfc7168))
+    $app->halt(418, 'Feel free to take me as teapot!');
+
 If you would like to render a template with a list of error messages, you should use the Slim application's `render()`
 method instead.
 
