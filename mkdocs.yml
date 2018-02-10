@@ -1,72 +1,86 @@
 site_name: Slim Framework v2
 pages:
-    - [index.md, Home]
-    - [start/get-started.md, Get Started]
-    - [configuration/overview.md, Configuration, Overview]
-    - [configuration/settings.md, Configuration, Settings]
-    - [configuration/names-and-scopes.md, Configuration, Names and Scopes]
-    - [configuration/modes.md, Configuration, Modes]
-    - [routing/overview.md, Routing, Overview]
-    - [routing/get.md, Routing, GET Routes]
-    - [routing/post.md, Routing, POST Routes]
-    - [routing/put.md, Routing, PUT Routes]
-    - [routing/delete.md, Routing, DELETE Routes]
-    - [routing/options.md, Routing, OPTIONS Routes]
-    - [routing/patch.md, Routing, PATCH Routes]
-    - [routing/custom.md, Routing, Custom Routes]
-    - [routing/params.md, Routing, Parameters]
-    - [routing/names.md, Routing, Names]
-    - [routing/conditions.md, Routing, Conditions]
-    - [routing/middleware.md, Routing, Middleware]
-    - [routing/groups.md, Routing, Groups]
-    - [routing/helpers.md, Routing, Helpers]
-    - [routing/rewrite.md, Routing, URL Rewriting]
-    - [environment/overview.md, Environment, Overview]
-    - [request/overview.md, Request, Overview]
-    - [request/method.md, Request, Method]
-    - [request/headers.md, Request, Headers]
-    - [request/body.md, Request, Body]
-    - [request/variables.md, Request, Variables]
-    - [request/cookies.md, Request, Cookies]
-    - [request/paths.md, Request, Paths]
-    - [request/xhr.md, Request, XHR]
-    - [request/helpers.md, Request, Helpers]
-    - [request/content-types.md, Request, Content-Types]    
-    - [response/overview.md, Response, Overview]
-    - [response/status.md, Response, Status]
-    - [response/headers.md, Response, Headers]
-    - [response/body.md, Response, Body]
-    - [response/cookies.md, Response, Cookies]
-    - [response/helpers.md, Response, Helpers]
-    - [view/overview.md, View, Overview]
-    - [view/rendering.md, View, Rendering]
-    - [view/custom.md, View, Custom]
-    - [view/data.md, View, Data]
-    - [cache/overview.md, HTTP Cache, Overview]
-    - [cache/etag.md, HTTP Cache, ETag]
-    - [cache/lastmodified.md, HTTP Cache, Last Modified]
-    - [cache/expires.md, HTTP Cache, Expires]
-    - [middleware/overview.md, Middleware, Overview]
-    - [middleware/how-to-use.md, Middleware, How to Use]
-    - [middleware/how-to-write.md, Middleware, How to Write]
-    - [hooks/overview.md, Hooks, Overview]
-    - [hooks/how-to-use.md, Hooks, How to Use]
-    - [hooks/defaults.md, Hooks, Defaults]
-    - [hooks/custom.md, Hooks, Custom]
-    - [flash/overview.md, Flash Messages, Overview]
-    - [flash/next.md, Flash Messages, Next]
-    - [flash/now.md, Flash Messages, Now]
-    - [flash/keep.md, Flash Messages, Keep]
-    - [sessions/native.md, Sessions, Native]
-    - [sessions/cookies.md, Sessions, Cookies]
-    - [logging/activate.md, Logging, Activate]
-    - [logging/levels.md, Logging, Levels]
-    - [logging/writers.md, Logging, Writers]
-    - [errors/overview.md, Error Handling, Overview]
-    - [errors/500.md, Error Handling, 500 System Error]
-    - [errors/404.md, Error Handling, 404 Not Found]
-    - [errors/debug.md, Error Handling, Debug Mode]
-    - [errors/output.md, Error Handling, Output]
-    - [di/overview.md, Dependency Injection, Overview]
+- Home: index.md
+- Get Started: start/get-started.md
+- Configuration:
+  - Overview: configuration/overview.md
+  - Settings: configuration/settings.md
+  - Names and Scopes: configuration/names-and-scopes.md
+  - Modes: configuration/modes.md
+- Routing:
+  - Overview: routing/overview.md
+  - GET Routes: routing/get.md
+  - POST Routes: routing/post.md
+  - PUT Routes: routing/put.md
+  - DELETE Routes: routing/delete.md
+  - OPTIONS Routes: routing/options.md
+  - PATCH Routes: routing/patch.md
+  - Custom Routes: routing/custom.md
+  - Parameters: routing/params.md
+  - Names: routing/names.md
+  - Conditions: routing/conditions.md
+  - Middleware: routing/middleware.md
+  - Groups: routing/groups.md
+  - Helpers: routing/helpers.md
+  - URL Rewriting: routing/rewrite.md
+- Environment:
+  - Overview: environment/overview.md
+- Request:
+  - Overview: request/overview.md
+  - Method: request/method.md
+  - Headers: request/headers.md
+  - Body: request/body.md
+  - Variables: request/variables.md
+  - Cookies: request/cookies.md
+  - Paths: request/paths.md
+  - XHR: request/xhr.md
+  - Helpers: request/helpers.md
+  - Content-Types: request/content-types.md
+- Response:
+  - Overview: response/overview.md
+  - Status: response/status.md
+  - Headers: response/headers.md
+  - Body: response/body.md
+  - Cookies: response/cookies.md
+  - Helpers: response/helpers.md
+- View:
+  - Overview: view/overview.md
+  - Rendering: view/rendering.md
+  - Custom: view/custom.md
+  - Data: view/data.md
+- HTTP Cache:
+  - Overview: cache/overview.md
+  - ETag: cache/etag.md
+  - Last Modified: cache/lastmodified.md
+  - Expires: cache/expires.md
+- Middleware:
+  - Overview: middleware/overview.md
+  - How to Use: middleware/how-to-use.md
+  - How to Write: middleware/how-to-write.md
+- Hooks:
+  - Overview: hooks/overview.md
+  - How to Use: hooks/how-to-use.md
+  - Defaults: hooks/defaults.md
+  - Custom: hooks/custom.md
+- Flash Messages:
+  - Overview: flash/overview.md
+  - Next: flash/next.md
+  - Now: flash/now.md
+  - Keep: flash/keep.md
+- Sessions:
+  - Native: sessions/native.md
+  - Cookies: sessions/cookies.md
+- Logging:
+  - Activate: logging/activate.md
+  - Levels: logging/levels.md
+  - Writers: logging/writers.md
+- Error Handling:
+  - Overview: errors/overview.md
+  - 500 System Error: errors/500.md
+  - 404 Not Found: errors/404.md
+  - Debug Mode: errors/debug.md
+  - Output: errors/output.md
+- Dependency Injection:
+  - Overview: di/overview.md
 theme: readthedocs
 markdown_extensions: [markdown.extensions.extra]
